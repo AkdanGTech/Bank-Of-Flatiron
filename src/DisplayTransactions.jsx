@@ -7,7 +7,7 @@ function DisplayTransactions({transactions, hasChange, setHasChange}) {
 
   function handleDelete (event) {
     const id = event.target.id;
-    fetch (`http://localhost:3000/transactions/${id}`, {
+    fetch (`http://localhost:8000/transactions/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',
