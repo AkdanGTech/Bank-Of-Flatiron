@@ -10,7 +10,7 @@ function App() {
   const [hasChange, setHasChange] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3000/transactions")
+    fetch("http://localhost:8000/transactions")
     .then(res => res.json())
     .then(transactions => {setTransactions(transactions)})
   },[hasChange])
