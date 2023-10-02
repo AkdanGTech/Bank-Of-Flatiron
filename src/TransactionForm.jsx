@@ -18,7 +18,7 @@ function TransactionForm({ hasChange, setHasChange }) {
     function handleSubmit (event) {
         event.preventDefault();
         if (formData.amount !== 0) {
-            fetch ("http://localhost:3000/transactions", {
+            fetch ("http://localhost:8000/transactions", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
